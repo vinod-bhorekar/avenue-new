@@ -65,22 +65,19 @@
     line-height: 45px;
     border: none;
     background-color: #00c8c8;
+    font-size: 13px;
     text-align: center;
     color: white;
     font-family:Montserrat-Regular;
     padding: 0 15px;
     margin-left: 50px;
     cursor: pointer;
-    
-
 
  }
  .fa-cart-shopping{
    color: #ffffff;
    margin-right: 8px;
    cursor: pointer;
-
-
  }
  .menuebar__btn-select2 {
     background-color: #00c8c8;
@@ -114,9 +111,15 @@
    font-family:Montserrat-Regular;
    color: #222222;
    text-decoration: none;
+   letter-spacing: 1px;
 }
 .container__nav-search{
    display: flex;
+   align-items: center;
+}
+.nav{
+   display: flex;
+   align-items: center;
 }
 
 .nav__ul{
@@ -127,10 +130,12 @@ li a {
    text-decoration: none;
    font-size: 13px;
    color: #222222;
-   line-height: 110px;
    font-weight: bold;
    font-family:Montserrat-Regular;
    margin: 20px;
+}
+.nav-select{
+   display: block;
 }
 .nav__search-box{
    display: flex;
@@ -143,9 +148,14 @@ li a {
 .nav__input-search {
    width: 125px;
    padding:5px;
-   border: 1px solid grey;
+   border: 1px solid #ccc;
    border-right: none;
 
+}
+input[type=text]:focus{
+   border:1px solid #ccc;
+   border-right: none;
+   outline: none;
 }
 .fa-magnifying-glass{
  color: #989898;
@@ -153,7 +163,7 @@ li a {
 
 .nav__search-button{
    padding: 5px;
-   border: 1px solid grey;
+   border: 1px solid #ccc;
    box-sizing:border-box;
    border-left: none;
    background-color: #ffffff;
@@ -169,9 +179,7 @@ li a {
 }
 .banner__color-box{
    height: 450px;
-   background-color: #333333;
-   opacity: 0.5;
-   z-index: 1;
+   background-color:rgba(30, 30, 30, 0.6);
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -183,6 +191,7 @@ li a {
    font-family:Montserrat-Regular;
    text-align: center;
    margin-bottom: 20px;
+   letter-spacing: 2px;
    
 }
 span{
@@ -195,6 +204,8 @@ span{
    color:#ffffff;
    text-decoration: none;
    font-family:Montserrat-Regular;
+   letter-spacing: 2px;
+   font-weight: bold;
 
 }
 .content{
@@ -248,22 +259,25 @@ span{
    
 }
 .forget-pswd{
-
    text-decoration:none;
    color: #00c8c8;
-
    font-family:Montserrat-Regular;
    font-size: 13px;
 }
 
 input[type=email]:focus {
    outline:none;
-   border:1px solid red;
+   border:1px solid #de4775;
+   background-color: #f8f8f8;
  }
 
  input[type=password]:focus {
    outline:none;
-   border:1px solid red;
+   border:1px solid #de4775;
+   background-color: #f8f8f8;
+ }
+ input::placeholder{
+   color: #8e8c8c;
  }
 
 .button-sign-in {
@@ -280,13 +294,14 @@ input[type=email]:focus {
 
 }
 .checkbox{
-   color: #222222;
-   font-size:15px;
+   color: #8e8c8c;
+   font-size:13px;
    font-family:Montserrat-Regular;
+   word-spacing: 4px;
 
 }
-.checkbox__input{
-   padding:10px;
+input[type=checkbox] {
+   
 }
 .form__acc-create{
    margin-top: 30px;
@@ -307,7 +322,8 @@ input[type=email]:focus {
 }
 .form__privacy-policy{
    font-family:Montserrat-Regular;
-   font-size:15px;
+   font-size:13px;
+   color: #8e8c8c;
 }
 .footer{
    width:auto;
@@ -333,16 +349,40 @@ input[type=email]:focus {
   }      
   .footer__link{
      text-decoration: none;
-     color: #777777;
-     padding-top: 5px;
+     color: #8e8c8c;
+     padding-top: 15px;
+     font-weight: bold;
   }
   .footer__link:hover{
      color: #00c8c8;
   }
   .footer__link-heading{
      padding-bottom: 20px;
-     font-family:Montserrat-Regular ;
+     font-family:Montserrat-Regular;
+     color: #333333;
+     font-weight: bold;
   }
+  .footer__address{
+   color: #8e8c8c;
+   padding-top: 15px;
+   font-weight: bold;
+
+  }
+  .address__tele{
+   text-decoration: none;
+   color: #8e8c8c;
+   padding-top: 30px;
+   font-weight: bold;
+
+  }
+  .address__email{
+   text-decoration: none;
+   color: #8e8c8c;
+   font-weight: bold;
+   padding-top: 15px;
+
+  }
+  
   .container__social-media{
    display: flex;
    justify-content: center;
@@ -356,11 +396,13 @@ input[type=email]:focus {
   }
   .black-box{
      background-color: #333333;
+     font-family:Montserrat-Regular;
      text-align: center;
      color: white;
      width:560px;
      padding: 30px 0;
      font-size: 25px;
+     letter-spacing: 2px;
      
   }
   .social-media{
