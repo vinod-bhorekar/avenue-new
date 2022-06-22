@@ -226,8 +226,6 @@ span{
 }
 .form__sign-in{
    width:570px;
-
-   
 }
 .form__heading{
    margin-bottom: 25px;
@@ -240,7 +238,9 @@ span{
    width:100%;
    padding: 7px 5px;
    margin-bottom:20px;
-   font-family:Montserrat-Regular;
+   font-family:Montserrat-Light;
+   color: #989898;
+   font-weight: bold;
    border: 1px solid #ccc;
    box-sizing: border-box;
 }
@@ -294,14 +294,18 @@ input[type=email]:focus {
 
 }
 .checkbox{
-   color: #8e8c8c;
+   color: #989898;
+   font-weight: bold;
    font-size:13px;
    font-family:Montserrat-Regular;
    word-spacing: 4px;
-
+   display: flex;
+   align-content: center;
 }
-input[type=checkbox] {
-   
+input[type="checkbox"] {
+   width: 20px;
+   height: 20px;
+   margin-right: 15px;
 }
 .form__acc-create{
    margin-top: 30px;
@@ -322,8 +326,19 @@ input[type=checkbox] {
 }
 .form__privacy-policy{
    font-family:Montserrat-Regular;
+   font-weight: bold;
    font-size:13px;
    color: #8e8c8c;
+   
+}
+.privacy-policy__link{
+   text-decoration: none;
+   color: #00c8c8;
+   font-family:Montserrat-Regular;
+   font-size: 13px;
+}
+.fa-arrow-right-long{
+   padding-left: 5px;
 }
 .footer{
    width:auto;
@@ -349,8 +364,10 @@ input[type=checkbox] {
   }      
   .footer__link{
      text-decoration: none;
-     color: #8e8c8c;
+     color: #727272;
      padding-top: 15px;
+     font-family:Montserrat-Light;
+     font-size: 14px;
      font-weight: bold;
   }
   .footer__link:hover{
@@ -359,27 +376,30 @@ input[type=checkbox] {
   .footer__link-heading{
      padding-bottom: 20px;
      font-family:Montserrat-Regular;
-     color: #333333;
+     color:  #575153;
      font-weight: bold;
+     font-size: 13px;
   }
   .footer__address{
-   color: #8e8c8c;
-   padding-top: 15px;
+   color: #727272;
+   padding-top: 14px;
+   font-family:Montserrat-Light;
    font-weight: bold;
 
   }
   .address__tele{
    text-decoration: none;
-   color: #8e8c8c;
+   color: #727272;
    padding-top: 30px;
    font-weight: bold;
-
+   font-family:Montserrat-Light;
   }
   .address__email{
    text-decoration: none;
-   color: #8e8c8c;
+   color: #727272;
    font-weight: bold;
    padding-top: 15px;
+   font-family:Montserrat-Light;
 
   }
   
@@ -396,15 +416,23 @@ input[type=checkbox] {
   }
   .black-box{
      background-color: #333333;
-     font-family:Montserrat-Regular;
      text-align: center;
-     color: white;
      width:560px;
      padding: 30px 0;
-     font-size: 25px;
-     letter-spacing: 2px;
-     
   }
+  .black-box-text{
+   font-family:Montserrat-Bold ;
+   color: #ffffff;
+   font-size: 36px;
+   letter-spacing: 2px;
+}
+.black-box p{
+   font-family:Montserrat-Regular;
+   color:#ffffff;
+   font-size: 36px;
+   letter-spacing: 2px;
+}
+
   .social-media{
      width: 560px;
      background-color: #00c8c8;
